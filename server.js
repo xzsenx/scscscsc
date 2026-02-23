@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 // ТВОИ ОФИЦИАЛЬНЫЕ КЛЮЧИ
 const CLIENT_ID = 'l2xDdNRkLBM7CG9O2NGa0xuEi7ctRVNa';
 const CLIENT_SECRET = 'ISsUMKktZiqmbhALsTV1lewqkNCD9oDZ';
-const REDIRECT_URI = 'http://localhost:3000/api/callback';
+const REDIRECT_URI = 'https://my-sc-proxy.onrender.com/api/callback';
 
 // База данных в оперативе
 const userTokens = {};
@@ -108,3 +108,4 @@ app.get('/api/stream/:trackId', async (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`🚀 Бэкенд запущен на порту ${PORT}. Готов к работе!`));
+
